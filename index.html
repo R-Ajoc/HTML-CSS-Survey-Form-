@@ -5,31 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Survey Form</title>
   <link rel="stylesheet" href="SVstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Survey Form</h1>
-  <div class="container">
+  <section class="container">
+    <header>Survey Form</header>
     <form action="" method="GET">
-      <h4>Section 1</h4>
-      <div>
+      <hr>
+      <h4>Section 1<span class="section-underline"></span></h4>
+      <div class="input-box">
         <p>1.1 Which of the following services do you use? (Check all that apply)</p>
-        <div>
-          <input type="checkbox" name="services" id="service1" value="Service 1">
-          <label for="service1">Service 1</label>
-
-          <input type="checkbox" name="services" id="service2" value="Service 2">
-          <label for="service2">Service 2</label>
+        <div class="checkbox-row"> 
+          <div> 
+            <input type="checkbox" name="services" id="service1" value="Service 1"> 
+            <label for="service1">Service 1</label> 
+          </div> 
+          <div> 
+            <input type="checkbox" name="services" id="service2" value="Service 2"> 
+            <label for="service2">Service 2</label> 
+          </div>
         </div>
-        <div>
-          <input type="checkbox" name="services" id="service3" value="Service 3">
-          <label for="service3">Service 3</label>
-
-          <input type="checkbox" name="services" id="service4" value="Service 4">
-          <label for="service4">Service 4</label>
+        <div class="checkbox-row">
+          <div>
+            <input type="checkbox" name="services" id="service3" value="Service 3">
+            <label for="service3">Service 3</label>
+          </div>
+          <div>
+            <input type="checkbox" name="services" id="service4" value="Service 4">
+            <label for="service4">Service 4</label>
+          </div>
         </div>
-        <div>
-          <input type="checkbox" name="services" id="other" value="Other">
-          <label for="other">Other</label>
+        <div class="checkbox-row">
+          <div>
+            <input type="checkbox" name="services" id="other" value="Other">
+            <label for="other">Other</label>
+          </div>
         </div>
       </div>
 
@@ -86,8 +96,9 @@
         </div>
       </div>
 
-      <h4>Section 2</h4>
-      <div>
+      <hr>
+      <h4>Section 2<span class="section-underline"></span></h4>
+      <div class="section2-heading">
         <p>2.1 How may we reach you? <i>(optional)</i></p>
       </div>
       <div class="form-group">
@@ -107,6 +118,9 @@
         <button type="reset">Reset</button>
       </div>
     </form>
-  </div>
+  </section>
 </body>
 </html>
+          
+   
+      
